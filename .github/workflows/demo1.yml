@@ -1,4 +1,4 @@
-name: Events Demo
+name: EventsDemo
 on:
   pull_request:
     types: [opened, edited]
