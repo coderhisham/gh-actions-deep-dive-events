@@ -1,4 +1,4 @@
-name: Events Demo 1
+name: Events Demo
 on:
   pull_request:
     types: [opened, edited]
@@ -8,10 +8,10 @@ on:
   push:
     branches:
       - main
-      - 'dev-*'
-      - 'feat/**'
-    paths:
-      - '.github/workflows/**'
+      - "dev-*"
+      - "feat/**"
+    paths-ignore:
+      - ".github/workflows/**"
 jobs:
   deploy:
     runs-on: ubuntu-latest
